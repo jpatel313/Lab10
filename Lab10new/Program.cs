@@ -11,8 +11,6 @@ namespace Lab10new
         static void Main(string[] args)
         {
             List<Movie> MovieList = new List<Movie>();
-            //string inputTitles; ;
-            //string inputCategories;
 
             //Add movies to MovieList ("title", "category").
             //Movies listed below start at index 0 etc.
@@ -27,20 +25,40 @@ namespace Lab10new
             MovieList.Add(new Movie("The Take", "drama"));
             MovieList.Add(new Movie("Man Down", "drama"));
 
-            //Input= user category.
-            Console.WriteLine("What category are you interested in?\n(Categories include:scifi,animated,drama ");
-            string category = Console.ReadLine();
-            SearchMethod(MovieList,  category);
+            Console.WriteLine("Welcome to the Movie List Application!\n");
+            string y = "y";
+
+            while (y == "y")
+            {
+                //Input= user category.
+                Console.WriteLine("What category are you interested in?\n\ncategories:\nscifi, animated, drama ");
+                string category = Console.ReadLine();
+                SearchMethod(MovieList, category);
+
+                Console.Write("Continue? (y/n):");
+                y = Console.ReadLine();
+                if (y != "y")
+                {
+                    Console.WriteLine("Goodbye!");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("What category are you interested in?...\nscifi, animated, drama ");
+                    category = Console.ReadLine();
+                }
+            }
         }
 
-        //Method takes MovieList and category search as input,
-        //And prints
         public static void SearchMethod(List<Movie> MovieDatabase, string category)
-        {
+        {//Method takes MovieList and category search as input,
+        //And prints all movie titles matching category string.
+
+
+
             for (int i = 0; i < MovieDatabase.Count; i++)
             {
                 if (MovieDatabase[i].Category1 == category)
-               
                 {
                     Console.WriteLine(MovieDatabase[i].Title1);
                 }
