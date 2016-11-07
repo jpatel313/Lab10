@@ -1,1 +1,6 @@
 C:\Users\Jay Patel\Desktop\Projects\Lab10new\Lab10new\bin\Debug\Lab10new.exe.config
+C:\Users\Jay Patel\Desktop\Projects\Lab10new\Lab10new\bin\Debug\Lab10new.exe
+C:\Users\Jay Patel\Desktop\Projects\Lab10new\Lab10new\bin\Debug\Lab10new.pdb
+C:\Users\Jay Patel\Desktop\Projects\Lab10new\Lab10new\obj\Debug\Lab10new.csprojResolveAssemblyReference.cache
+C:\Users\Jay Patel\Desktop\Projects\Lab10new\Lab10new\obj\Debug\Lab10new.exe
+C:\Users\Jay Patel\Desktop\Projects\Lab10new\Lab10new\obj\Debug\Lab10new.pdb

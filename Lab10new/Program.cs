@@ -10,6 +10,41 @@ namespace Lab10new
     {
         static void Main(string[] args)
         {
+            List<Movie> MovieList = new List<Movie>();
+            //string inputTitles; ;
+            //string inputCategories;
+
+            //Add movies to MovieList ("title", "category").
+            //Movies listed below start at index 0 etc.
+            MovieList.Add(new Movie("Despicable Me", "animated"));
+            MovieList.Add(new Movie("Waking Life", "animated"));
+            MovieList.Add(new Movie("Trolls", "animated"));
+            MovieList.Add(new Movie("The Matrix", "scifi"));
+            MovieList.Add(new Movie("13th Floor", "scifi"));
+            MovieList.Add(new Movie("Dark City", "scifi"));
+            MovieList.Add(new Movie("Ghost in the Shell", "scifi"));
+            MovieList.Add(new Movie("Hacksaw Ridge", "drama"));
+            MovieList.Add(new Movie("The Take", "drama"));
+            MovieList.Add(new Movie("Man Down", "drama"));
+
+            //Input= user category.
+            Console.WriteLine("What category are you interested in?\n(Categories include:scifi,animated,drama ");
+            string category = Console.ReadLine();
+            SearchMethod(MovieList,  category);
+        }
+
+        //Method takes MovieList and category search as input,
+        //And prints
+        public static void SearchMethod(List<Movie> MovieDatabase, string category)
+        {
+            for (int i = 0; i < MovieDatabase.Count; i++)
+            {
+                if (MovieDatabase[i].Category1 == category)
+               
+                {
+                    Console.WriteLine(MovieDatabase[i].Title1);
+                }
+            }
         }
     }
 }
