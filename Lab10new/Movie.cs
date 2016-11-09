@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab10new
+
+namespace Lab10
 {
     class Movie
     {
@@ -39,7 +40,7 @@ namespace Lab10new
 
         public Movie(string inputTitles, string inputCategories)
         {
-        Title1 = inputTitles; Category1 = inputCategories;
+            Title1 = inputTitles; Category1 = inputCategories;
         }
 
 
